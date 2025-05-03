@@ -127,3 +127,24 @@ Git хранит таблицу соответствий `хеш → инфор�
 ```
 
 Хеши и таблицу `хеш → информация о коммите` Git сохраняет в служебных файлах в папке .git.
+
+## Логи – `git log`
+
+Лог содержит описание коммита: 
+* хеш
+* автор
+* дата
+* сообщение
+
+Самый первый коммит:
+```
+commit e83c5163316f89bfbde7d9ab23ca2e25604af290
+Author: Linus Torvalds <torvalds@linux-foundation.org>
+Date:   Thu Apr 7 15:13:13 2005 -0700
+
+    Initial revision of "git", the information manager from hell
+```
+
+### Получить сокращённый лог — `git log --oneline`
+
+Команда `git log --oneline` выводит сокращенный лог с хешами и комментариями.
